@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./src/style.css" rel="stylesheet" />
   <script src="./src/hero.ts" type="application/javascript" defer></script>
+  <script src="./src/carousel.ts" type="application/javascript" defer></script>
   <title>House of Mughairah</title>
 </head>
 
@@ -16,7 +17,7 @@
     </div>
     <div class="absolute h-20 w-full flex-row flex items-center px-6 py-3">
       <button>
-        <img src="./public/sandwich.svg" width="28" />
+        <img src="./public/icons/sandwich.svg" width="28" />
       </button>
       <p class="ml-[-20px] grow text-center font-serif text-lg font-extralight italic tracking-wider">
         House of Mughairah
@@ -34,8 +35,8 @@
         </p>
       </div>
     </div>
-    <article class="mt-10 p-10 text-sm/6 font-light">
-      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5" />
+    <article class="mt-10 p-10 text-sm/6 font-extralight">
+      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5" alt="Picture of Aziza Al Mugheiry" />
       <p>
         <span class="font-semibold">Aziza bint Seif Mohammed Al Mugheiry</span>
         is an Omani scientist currently contributing to research at UK government
@@ -50,6 +51,48 @@
         physics, modern political philosophy, diplomacy and literature.
       </p>
     </article>
+    <section id="carousel" class="h-80 px-10 py-14">
+    </section>
+    <section class="bg-gradient-to-b from-zinc-800 to-foreground w-full">
+      <div class="p-10 pt-14 flex flex-col gap-10">
+        <div>
+          <h3 class="font-semibold">EVENT</h3>
+          <br>
+          <blockquote class="text-xl italic">
+            How Modern Science Unravels the Secrets of the Ancient Worlds
+          </blockquote>
+          <footer class="font-extralight text-sm mt-2 pl-5">
+            21 Febuary 2024, 17:30-19:00
+            <br>
+            34 Sackville Street, London/Online
+          </footer>
+        </div>
+        <h2 class="text-2xl">
+          Join Aziza Al Mugheiry in being the <span class="font-semibold">youngest speaker</span> in history at the
+          British Omani Society.
+        </h2>
+        <a class="p-2 px-4 border rounded-md hover:bg-zinc-700 w-fit text-center whitespace-nowrap" target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.britishomani.org/events/bos/how-modern-science-unravels-the-secrets-of-the-ancient-worlds">
+          More Info
+        </a>
+      </div>
+    </section>
+    <section id="seif-flight">
+      <div class="relative">
+        <img src="./public/seif-writing.jpg" class="opacity-30"
+          alt="Picture of Seif Al Mugheiry writing in a notebook alongside a colleague. Sign with the company name 'Gamco' appears in the back wall">
+        <div class="absolute bottom-0 mt-10 p-10 text-sm/5 font-light">
+          <h2 class="text-4xl"><span class="font-semibold">Seif Flight:</span> The Story of My Father, Seif Al Mugheiry
+          </h2>
+          <br>
+          <p>
+            Aziza Al Mugheiry is undertaking a journey to discover and explore the life of her father,
+            through a biography titled 'Seif Flight'.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
