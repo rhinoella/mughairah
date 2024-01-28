@@ -1,13 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html"],
+  content: [
+    "./index.html",
+    "./src/**/*.{ts}"
+],
   theme: {
     extend: {
       colors: {
         "background": "#27272a",
         "foreground": "#1A1818",
-        "foreground-transparent": "rgba(39, 39, 42, 0.2)",
+        "foreground-transparent-0.2": "rgba(39, 39, 42, 0.2)",
+        "dark-transparent-0.8": "rgba(18, 16, 17, 0.8)",
+        "dark-transparent-0.2": "rgba(18, 16, 17, 0.2)",
         "background-darker": "#19191D",
+        "dark": "rgba(18, 16, 17)",
+      },
+      backgroundImage: {
+        'seif-flight': "url('../public/seif-writing.jpg')"
       }
     },
   },
