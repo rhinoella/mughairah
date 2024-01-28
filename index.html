@@ -7,21 +7,32 @@
   <link href="./src/style.css" rel="stylesheet" />
   <script src="./src/hero.ts" type="application/javascript" defer></script>
   <script src="./src/carousel.ts" type="application/javascript" defer></script>
+  <script src="./src/menu.ts" type="application/javascript" defer></script>
   <title>House of Mughairah</title>
 </head>
 
-<body class="bg-foreground">
-  <header class="h-20 w-full fixed top-0 z-50">
-    <div
-      class="absolute h-20 w-full bg-gradient-to-b from-foreground from-10% to-foreground-transparent bg-opacity-100">
+<body class="bg-foreground flex flex-col items-stretch">
+  <header class="w-full fixed z-30">
+    <div class="h-20 absolute w-full">
+      <div class="z-30 absolute h-20 w-full bg-gradient-to-b from-dark from-10% to-dark-transparent-0.2 bg-opacity-100">
+      </div>
+      <div class="absolute h-20 w-full flex-row flex items-center px-6 py-3">
+        <button type="button" id="sandwich" class="z-40">
+          <img src="./public/icons/sandwich.svg" width="28" alt="Menu button" />
+        </button>
+        <p class="z-30 ml-[-20px] grow text-center font-serif text-lg font-extralight italic tracking-wider">
+          House of Mughairah
+        </p>
+      </div>
     </div>
-    <div class="absolute h-20 w-full flex-row flex items-center px-6 py-3">
-      <button>
-        <img src="./public/icons/sandwich.svg" width="28" />
-      </button>
-      <p class="ml-[-20px] grow text-center font-serif text-lg font-extralight italic tracking-wider">
-        House of Mughairah
-      </p>
+    <div id="menu-bg" class="z-20 w-full">
+      <nav id="menu"
+        class="hidden fade flex-col h-screen text-lg font-extralight items-center bg-gradient-to-b from-dark to-dark-transparent-0.8 from-20%">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#bos-event">Upcoming Lecture</a>
+        <a class="nav-link" href="#seif-flight">Books</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
   <main class="h-full bg-background">
@@ -106,10 +117,8 @@
         physics, modern political philosophy, diplomacy and literature.
       </p>
     </article>
-    <section id="carousel" class="h-80 px-10 py-14">
-    </section>
-    <section class="bg-gradient-to-b from-zinc-800 to-foreground w-full">
-      <div class="p-10 pt-14 flex flex-col gap-10">
+    <section id="bos-event" class="anchor bg-gradient-to-b from-zinc-800 to-foreground w-full">
+      <div class="content p-10 pt-14 flex flex-col gap-10">
         <div>
           <h3 class="font-semibold">EVENT</h3>
           <br>
@@ -134,9 +143,10 @@
       </div>
     </section>
     <section id="seif-flight">
-      <div class="relative">
-        <img src="./public/seif-writing.jpg" class="opacity-30"
+      <div class="anchor content relative h-[70vh] w-full">
+        <div class="bg-seif-flight bg-cover bg-center opacity-30 h-full"
           alt="Picture of Seif Al Mugheiry writing in a notebook alongside a colleague. Sign with the company name 'Gamco' appears in the back wall">
+        </div>
         <div class="absolute bottom-0 mt-10 p-10 text-sm/5 font-light">
           <h2 class="text-4xl"><span class="font-semibold">Seif Flight:</span> The Story of My Father, Seif Al Mugheiry
           </h2>
@@ -147,6 +157,43 @@
           </p>
         </div>
       </div>
+    </section>
+    <section id="contact" class="h-full flex flex-col pt-24 px-10 pb-8 gap-3">
+      <h2 class=" text-4xl font-extralight underline pb-10">CONTACT</h2>
+      <form method="post" action="./src/sendmail.php" class="flex flex-col gap-4">
+        <div class="flex flex-row border-b-white border-b-[1px] gap-4">
+          <label for="input-name">Name</label>
+          <input id="input-name" class="grow font-serif" type="text" name="input-name">
+        </div>
+        <div class="flex flex-row border-b-white border-b-[1px] gap-4">
+          <label for="input-email">Email</label>
+          <input id="input-email" class="grow font-serif" type="text" name="input-email" required>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="input-message" class="w-fit pr-2">Message</label>
+          <div class="border-slate-100 border-t border-b">
+            <textarea id="input-message" rows="10" class="grow font-serif p-3 w-[calc(100%-theme(spacing.6))]"
+              name="input-message" required></textarea>
+          </div>
+          <button type="submit" class="w-fit self-end mt-5 opacity-80 hover:opacity-100">
+            <img src="./public/icons/arrow-right.svg" width="30">
+          </button>
+        </div>
+      </form>
+      <div class="flex flex-row gap-5  align-bottom">
+        <a class="" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/houseofmughairah/">
+          <img class="place-self-start opacity-90 hover:opacity-100" src="./public/icons/instagram.svg" width="30">
+        </a>
+        <a class="" target="_blank" rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/aziza-al-mugheiry-376901207/">
+          <img class="place-self-start opacity-90 hover:opacity-100" src="./public/icons/linkedin.svg" width="30">
+        </a>
+      </div>
+      <a href="mailto:founder@mughairah.com" class="opacity-90 hover:opacity-100 text-lg font-extralight tracking-wide">
+        <img src="./public/icons/external-link.svg" width="10" class="inline" alt="Arrow send button">
+        founder@mughairah.com
+      </a>
+      <p class="text-xs font-extralight mt-12">Copyright © 2023 House of Mughairah. All Rights Reserved</p>
     </section>
   </main>
 </body>

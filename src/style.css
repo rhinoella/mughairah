@@ -14,8 +14,45 @@ body {
   height: 100vh;
 }
 
-button {
+input, textarea {
   all: unset;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-radius: 0;
+  background-color: #27272a;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.anchor {
+  scroll-margin-top: 100px;
+}
+
+#menu {
+  gap: 2rem;
+  opacity: 1;
+  padding-top: 7rem;
+  transition: opacity 0.4s linear, gap 0.5s, padding-top 0.5s ease-in-out;
+}
+
+#menu.fade {
+  opacity: 0;
+  gap: 1.6rem;
+  padding-top: 4rem;
+}
+
+.carousel {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.carousel.fade {
+  opacity: 0;
 }
 
 blockquote {
