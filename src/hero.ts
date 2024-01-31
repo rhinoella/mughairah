@@ -15,7 +15,9 @@ for (let i = 1; i < 115; i++) {
 hero.style.backgroundImage = `url(${getImg(1)})`;
 
 window.addEventListener("scroll", () => {
-  if(heroImages[(115 + window.scrollY ) % 114] != undefined) {
-    hero.style.backgroundImage = `url(${heroImages[(115 + window.scrollY ) % 114].src})`;
-  }
+  setTimeout(() => {
+    if(heroImages[(115 + window.scrollY ) % 114] != undefined) {
+      hero.style.backgroundImage = `url(${heroImages[(115 + window.scrollY ) % 114].src})`;
+    }
+  }, 100);
 });

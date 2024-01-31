@@ -35,19 +35,20 @@
       </nav>
     </div>
   </header>
-  <main class="h-full bg-background">
-    <div id="hero" class="relative z-0 h-full">
+  <main id="main" class="h-full bg-background">
+    <div id="hero" class="relative z-0 h-4/5 w-screen">
       <div class="absolute z-10 h-full w-full bg-gradient-to-b from-foreground via-foreground via-10%"></div>
       <div id="hero-img" class="h-full bg-cover bg-center opacity-100"></div>
-      <div class="absolute bottom-0 z-20 m-5 mb-10 flex flex-col align-bottom">
-        <h1 class="text-6xl">Aziza <br />Al Mugheiry</h1>
-        <p class="text-2xl font-light tracking-wide">
+      <div class="absolute bottom-0 md:bottom-10 z-20 m-5 md:ml-0 mb-10 flex flex-col w-screen">
+        <h1 class="text-6xl md:hidden">Aziza <br />Al Mugheiry</h1>
+        <h1 class="hidden md:block text-7xl mx-auto md:w-[1280px]">Aziza Al Mugheiry</h1>
+        <p class="text-2xl font-extralight tracking-wide md:text-5xl mx-auto md:w-[1280px]">
           Writer. Scientist. Dreamer.
         </p>
       </div>
     </div>
     <section id="carousel" class="bg-gradient-to-b to-zinc-800 from-foreground h-2/5 px-10 pt-14 pb-10">
-      <div id="featured" class="carousel fade h-full flex-col gap-5">
+      <div id="featured" class="content carousel fade h-full flex-col gap-5">
         <h3 class="text-md tracking-tight font-semibold">FEATURED</h3>
         <br>
         <h2 class="text-2xl">The first GCC national to join UK Research and Innovation.</h2>
@@ -68,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div id="upcoming-book" class="fade carousel h-full flex-col gap-5">
+      <div id="upcoming-book" class="content fade carousel h-full flex-col gap-5">
         <h3 class="text-md tracking-tight font-semibold">UPCOMING BOOK</h3>
         <br>
         <div class="px-4 grow">
@@ -84,7 +85,7 @@
             alt="Down arrow">
         </a>
       </div>
-      <div id="upcoming-event" class="fade carousel h-full flex-col gap-5">
+      <div id="upcoming-event" class="content fade carousel h-full flex-col gap-5">
         <h3 class="font-semibold">EVENT</h3>
         <br>
         <div class="grow text-xl italic">
@@ -101,48 +102,83 @@
         </a>
       </div>
     </section>
-    <article id="about" class="anchor content mt-10 p-10 text-sm/6 font-extralight">
-      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5" alt="Picture of Aziza Al Mugheiry" />
-      <p>
-        <span class="font-semibold">Aziza bint Seif Mohammed Al Mugheiry</span>
-        is an Omani scientist currently contributing to research at UK government
-        agency known as Science & Technology Facilities Council in Oxfordshire.
-      </p>
-      <br>
-      <p>
-        She was raised in the Emirate of Dubai,
-        where she attended International School of Choueifat Al Sofouh and was awarded AP scholar with distinctions.
-        After completing her schooling, she received a full sponsorship from the Government of Oman to pursue her
-        Undergraduate degree in Physics & Astronomy at Cardiff University. Her interests lie in particle and nuclear
-        physics, modern political philosophy, diplomacy and literature.
-      </p>
-    </article>
-    <section id="bos-event" class="anchor bg-gradient-to-b from-zinc-800 to-foreground w-full">
-      <div class="content p-10 pt-14 flex flex-col gap-10">
-        <div>
-          <h3 class="font-semibold">EVENT</h3>
+    <article id="about"
+      class="anchor content mt-10 p-10 text-sm/6 md:text-xl font-extralight md:flex md:flex-row md:gap-20 h-screen items-center">
+      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5 md:hidden" alt="Picture of Aziza Al Mugheiry" />
+      <img src="./public/aziza-ral-portrait.jpg" class="hidden md:block object-cover max-h-96"
+        alt="Picture of Aziza Al Mugheiry" />
+      <div class="md:w-1/2">
+        <p>
+          <span class="font-semibold md:font-normal">Aziza bint Seif Mohammed Al Mugheiry</span>
+          is an Omani scientist currently contributing to research at UK government
+          agency known as Science & Technology Facilities Council in Oxfordshire.
+        </p>
+        <br>
+        <p>
+          She was raised in the Emirate of Dubai,
+          where she attended International School of Choueifat Al Sofouh and was awarded AP scholar with distinctions.
+          After completing her schooling, she received a full sponsorship from the Government of Oman to pursue her
+          Undergraduate degree in Physics & Astronomy at Cardiff University.
           <br>
-          <blockquote class="text-xl italic">
-            How Modern Science Unravels the Secrets of the Ancient Worlds
-          </blockquote>
-          <footer class="font-extralight text-sm mt-2 pl-5">
-            21 Febuary 2024, 17:30-19:00
+          <br>
+          Her interests lie in particle and nuclear
+          physics, modern political philosophy, diplomacy and literature.
+        </p>
+      </div>
+    </article>
+    <section id="bos-event" class="h-3/4 md:h-screen anchor bg-gradient-to-b from-zinc-800 to-foreground w-full">
+      <div id="bos-event-container"
+        class="md:block md:h-screen w-full md:bg-ruins bg-cover bg-center h-full snap-y overflow-scroll snap-mandatory z-50">
+        <div class="flex flex-col gap-10 items-center">
+          <div class="content px-10 pt-10 md:py-10 snap-start">
+            <div class="md:h-screen flex flex-col justify-end pb-10 md:pb-48 pt-8">
+              <h3 class="font-semibold md:text-9xl">UPCOMING EVENT</h3>
+            </div>
             <br>
-            34 Sackville Street, London/Online
-          </footer>
+            <div class="mx-auto md:hidden">
+              <blockquote class="text-xl italic">
+                How Modern Science Unravels the Secrets of the Ancient Worlds
+              </blockquote>
+              <footer class="md:hidden font-extralight text-sm mt-2 pl-5">
+                <span>21 Febuary 2024, 17:30-19:00</span>
+                <br>
+                34 Sackville Street, London/Online
+              </footer>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center md:hidden">
+            <h2 class="content text-xl px-10">
+              Join Aziza Al Mugheiry in being the <span class="font-semibold md:text-8xl">youngest
+                speaker in
+                history</span>
+              <br>at the British Omani Society.
+            </h2>
+          </div>
+          <div id="event-title" class="hidden md:block md:h-screen pt-[30vh]">
+            <h2 class="content text-8xl font-serif italic md:h-80 snap-center"> How Modern
+              Science
+              Unravels the
+              Secrets
+              of the
+              Ancient
+              Worlds</h2>
+            <footer class="hidden content md:block font-extralight text-5xl pt-2 pl-0">
+              <span class="md:uppercase md:text-red-500 md:font-semibold">21 Febuary 2024, 17:30-19:00</span>
+              <br>
+              34 Sackville Street, London/Online
+            </footer>
+          </div>
+          <div class="md:pb-52">
+            <a class="snap-center p-2 px-4 border md:border-2 text-sm md:text-3xl rounded-md hover:bg-zinc-800 w-fit text-center whitespace-nowrap"
+              target="_blank" rel="noopener noreferrer"
+              href="https://www.britishomani.org/events/bos/how-modern-science-unravels-the-secrets-of-the-ancient-worlds">
+              More Info
+            </a>
+          </div>
         </div>
-        <h2 class="text-2xl">
-          Join Aziza Al Mugheiry in being the <span class="font-semibold">youngest speaker</span> in history at the
-          British Omani Society.
-        </h2>
-        <a class="p-2 px-4 border rounded-md hover:bg-zinc-700 w-fit text-center whitespace-nowrap" target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.britishomani.org/events/bos/how-modern-science-unravels-the-secrets-of-the-ancient-worlds">
-          More Info
-        </a>
       </div>
     </section>
-    <section id="seif-flight">
+    <section id="seif-flight" class="snap-center">
       <div class="anchor content relative h-[70vh] w-full">
         <div class="bg-seif-flight bg-cover bg-center opacity-30 h-full"
           alt="Picture of Seif Al Mugheiry writing in a notebook alongside a colleague. Sign with the company name 'Gamco' appears in the back wall">
@@ -158,9 +194,9 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="h-full flex flex-col pt-24 px-10 pb-8 gap-3">
+    <section id="contact" class="content h-full flex flex-col pt-24 px-10 pb-8 gap-3">
       <h2 class=" text-4xl font-extralight underline pb-10">CONTACT</h2>
-      <form method="post" action="./src/sendmail.php" class="flex flex-col gap-4">
+      <form method="post" action="http://localhost:5173/src/sendmail.php" class="flex flex-col gap-4">
         <div class="flex flex-row border-b-white border-b-[1px] gap-4">
           <label for="input-name">Name</label>
           <input id="input-name" class="grow font-serif" type="text" name="input-name">
@@ -189,7 +225,8 @@
           <img class="place-self-start opacity-90 hover:opacity-100" src="./public/icons/linkedin.svg" width="30">
         </a>
       </div>
-      <a href="mailto:founder@mughairah.com" class="opacity-90 hover:opacity-100 text-lg font-extralight tracking-wide">
+      <a href="mailto:founder@mughairah.com"
+        class="opacity-90 hover:opacity-100 text-lg font-extralight tracking-wide grow align-top">
         <img src="./public/icons/external-link.svg" width="10" class="inline" alt="Arrow send button">
         founder@mughairah.com
       </a>

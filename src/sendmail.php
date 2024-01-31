@@ -10,10 +10,10 @@ $phone = $_POST["input-phone"];
 $message = $_POST["input-message"];
 
 
-$to = "your@email.com";
+$to = "noella.spitz@gmail.com";
 $subject = "New Contact Form Submission";
-$body = "Name: {$name}\nEmail: {$input-email}\nPhone: {$input-phone}\nMessage: {$input-message}";
-$headers = "From: {$email}";
+$body = "Name: {$input-name}\nEmail: {$input-email}\nMessage: {$input-message}";
+$headers = "From: {$input-email}";
 
 
 if (mail($to, $subject, $body, $headers)) {
