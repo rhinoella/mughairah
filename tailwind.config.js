@@ -18,9 +18,13 @@ export default {
       },
       backgroundImage: {
         'seif-flight': "url('../public/seif-writing.jpg')",
+        'seif-flight-desktop': "url('../public/seif-writing-desktop.jpg')",
         'pharoah': "url('../public/pharoah.jpg')",
         'ruins': "url('../public/ruins.jpg')"
 
+      },
+      fontSize: {
+        '10xl': "10rem",
       }
     },
   },

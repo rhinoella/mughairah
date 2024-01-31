@@ -25,10 +25,12 @@ const hide = (element: HTMLElement) => {
   }
 }
 
-sandwich.addEventListener("click", () => { showItem(menuBar); }, false);
+if(screen.width < 768) {
+  sandwich.addEventListener("click", () => { showItem(menuBar); }, false);
 
-navLinks.forEach((link: HTMLAnchorElement) => {
-  link.addEventListener("click", () => { showItem(menuBar); }, false);
-});
+  navLinks.forEach((link: HTMLAnchorElement) => {
+    link.addEventListener("click", () => { showItem(menuBar); }, false);
+  });
 
-menuBar.addEventListener(transitionEndType, () => { hide(menuBar); }, false);
+  menuBar.addEventListener(transitionEndType, () => { hide(menuBar); }, false);
+}
