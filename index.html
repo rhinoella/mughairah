@@ -210,7 +210,8 @@
     </section>
     <section id="contact" class="content h-full flex flex-col pt-24 px-10 pb-8 gap-3">
       <h2 class=" text-4xl font-extralight underline pb-10">CONTACT</h2>
-      <form method="post" action="http://localhost:5173/src/sendmail.php" class="flex flex-col gap-4">
+      <form method="post" data-netlify="true" action="http://localhost:5173/src/sendmail.php"
+        class="flex flex-col gap-4">
         <div class="flex flex-row border-b-white border-b-[1px] gap-4">
           <label for="input-name">Name</label>
           <input id="input-name" class="grow font-serif" type="text" name="input-name">
