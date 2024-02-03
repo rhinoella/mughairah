@@ -20,7 +20,7 @@ export default {
         'seif-flight': "url('../public/seif-writing.jpg')",
         'seif-flight-desktop': "url('../public/seif-writing-desktop.jpg')",
         'ruins': "url('../public/ruins.jpg')",
-        'stars': "url('../public/nathan-anderson-stars.jpg')"
+        'library': "url('../public/library.jpg')"
       },
       fontSize: {
         '10xl': "10rem",
