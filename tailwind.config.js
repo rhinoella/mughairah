@@ -13,15 +13,14 @@ export default {
         "dark-transparent-0.8": "rgba(18, 16, 17, 0.8)",
         "dark-transparent-0.8": "rgba(18, 16, 17, 0.4)",
         "dark-transparent-0.2": "rgba(18, 16, 17, 0.2)",
-        "background-darker": "#19191D",
+        "background-darker": "#161413",
         "dark": "rgba(18, 16, 17)",
       },
       backgroundImage: {
         'seif-flight': "url('../public/seif-writing.jpg')",
         'seif-flight-desktop': "url('../public/seif-writing-desktop.jpg')",
-        'pharoah': "url('../public/pharoah.jpg')",
-        'ruins': "url('../public/ruins.jpg')"
-
+        'ruins': "url('../public/ruins.jpg')",
+        'stars': "url('../public/nathan-anderson-stars.jpg')"
       },
       fontSize: {
         '10xl': "10rem",

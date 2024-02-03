@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./src/style.css" rel="stylesheet" />
-  <script src="./src/hero.ts" type="module" defer></script>
   <script src="./src/carousel.ts" type="module" defer></script>
   <script src="./src/menu.ts" type="module" defer></script>
   <title>House of Mughairah</title>
@@ -17,20 +16,20 @@
       <div class="z-30 absolute h-20 w-full bg-gradient-to-b from-dark from-10% to-dark-transparent-0.2 bg-opacity-100">
       </div>
       <div class="absolute h-20 w-full flex-row flex items-center px-6 py-3">
-        <button type="button" id="sandwich" class="z-40 md:hidden">
+        <button type="button" id="sandwich" class="z-40 lg:hidden">
           <img src="./public/icons/sandwich.svg" width="28" alt="Menu button" />
         </button>
         <nav
-          class="z-30 hidden md:flex pl-36 flex-row gap-20 text-lg font-extralight items-center uppercase whitespace-nowrap w-[40rem]">
+          class="z-30 hidden lg:flex pl-36 flex-row gap-20 text-lg font-extralight items-center uppercase whitespace-nowrap w-[40rem]">
           <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#seif-flight">Books</a>
+          <a class="nav-link" href="#seif-flight">Projects</a>
           <a class="nav-link" href="#bos-event">Upcoming Lecture</a>
         </nav>
-        <p class="z-30 ml-[-20px] grow text-center font-serif text-lg md:text-xl font-extralight italic tracking-wider">
+        <p class="z-30 ml-[-20px] grow text-center font-serif text-lg lg:text-xl font-extralight italic tracking-wider">
           House of Mughairah
         </p>
         <nav
-          class="z-30 hidden md:flex flex-row text-lg font-extralight gap-32 pr-36 uppercase lg:w-[40rem] justify-end">
+          class="z-30 hidden lg:flex flex-row text-lg font-extralight gap-32 pr-36 uppercase lg:w-[40rem] justify-end">
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
@@ -41,28 +40,28 @@
         class="hidden fade flex-col h-screen text-lg font-extralight items-center bg-gradient-to-b from-dark to-dark-transparent-0.8 from-20%">
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#bos-event">Upcoming Lecture</a>
-        <a class="nav-link" href="#seif-flight">Books</a>
+        <a class="nav-link" href="#seif-flight">Projects</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
   <main id="main" class="h-full bg-background overflow-x-hidden scroll-smooth">
-    <div id="hero" class="relative z-0 h-4/5 w-screen">
+    <div id="hero" class="relative z-0 h-4/5 w-screen bg-stars bg-cover bg-bottom bg-fixed">
       <div class="absolute z-10 h-full w-full bg-gradient-to-b from-foreground via-foreground via-10%"></div>
       <div id="hero-img" class="h-full bg-cover bg-center opacity-100"></div>
-      <div class="absolute bottom-0 md:bottom-10 z-20 m-5 md:ml-0 mb-10 flex flex-col w-screen">
-        <h1 class="text-6xl md:hidden">Aziza <br />Al Mugheiry</h1>
-        <h1 class="hidden md:block text-7xl mx-auto md:w-[1280px]">Aziza Al Mugheiry</h1>
-        <p class="text-2xl font-extralight tracking-wide md:text-5xl md:mx-auto md:w-[1280px]">
+      <div class="absolute bottom-0 lg:bottom-10 z-20 m-5 lg:ml-0 mb-10 md:pl-10 flex flex-col w-screen">
+        <h1 class="text-6xl lg:hidden">Aziza <br />Al Mugheiry</h1>
+        <h1 class="hidden lg:block text-7xl mx-auto lg:w-[1280px]">Aziza Al Mugheiry</h1>
+        <p class="text-2xl font-extralight tracking-wide lg:text-5xl lg:mx-auto lg:w-[1280px]">
           Writer. Scientist. Dreamer.
         </p>
       </div>
     </div>
-    <section id="carousel" class="bg-gradient-to-b to-zinc-800 from-foreground h-2/5 px-10 pt-14 pb-10">
-      <div id="featured" class="content carousel fade h-full flex-col gap-5 md:gap-10">
-        <h3 class="text-md md:text-xl tracking-tight font-semibold">FEATURED</h3>
+    <section id="carousel" class="bg-gradient-to-t to-background-darker from-zinc-800 h-2/5 px-10 pt-14 pb-10">
+      <div id="featured" class="content carousel fade h-full flex-col gap-5 lg:gap-10">
+        <h3 class="text-md lg:text-xl tracking-tight font-semibold">FEATURED</h3>
         <br>
-        <h2 class="text-2xl md:text-5xl md:pt-10 md:font-extralight">The first GCC national to join UK Research and
+        <h2 class="text-2xl md:text-5xl md:pt-10 lg:font-extralight">The first GCC national to join UK Research and
           Innovation.
         </h2>
         <div class="fade md:text-lg flex flex-row font-extralight gap-5">
@@ -85,9 +84,9 @@
       <div id="upcoming-book" class="content fade carousel h-full flex-col gap-5 md:gap-10">
         <h3 class="text-md md:text-lg tracking-tight font-semibold">UPCOMING BOOK</h3>
         <br>
-        <div class="px-4 grow md:mx-auto md:pt-10">
+        <div class="px-4 grow md:mx-auto lg:pt-10">
           <h2 class="text-3xl md:text-5xl font-semibold">Seif Flight</h2>
-          <h3 class="text-2xl md:text-5xl font-light">
+          <h3 class="text-2xl md:text-4xl lg:text-5xl font-light">
             The Story of My Father, Seif Al
             Mugheiry
           </h3>
@@ -101,7 +100,7 @@
       <div id="upcoming-event" class="content fade carousel h-full flex-col gap-5">
         <h3 class="font-semibold md:text-lg">EVENT</h3>
         <br>
-        <div class="grow text-xl md:text-6xl italic md:pt-10">
+        <div class="grow text-xl md:text-3xl lg:text-6xl italic md:pt-10">
           How Modern Science Unravels the Secrets of the Ancient Worlds
           <footer class="font-extralight text-sm md:text-lg mt-2">
             21 Febuary 2024, 17:30-19:00
@@ -116,13 +115,13 @@
       </div>
     </section>
     <article id="about"
-      class="scroll-mt-28 md:scroll-mt-0 content mt-10 p-10 text-sm/6 md:text-xl font-extralight md:flex md:flex-row md:gap-20 h-screen items-center">
-      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5 md:hidden" alt="Picture of Aziza Al Mugheiry" />
-      <img src="./public/aziza-ral-portrait.jpg" class="hidden md:block object-cover max-h-96"
+      class="scroll-mt-28 lg:scroll-mt-0 content pb-10 p-10 text-sm/6 lg:text-xl font-extralight flex flex-col lg:flex-row gap-10 md:gap-20 h-[120vh] md:h-screen justify-center items-center">
+      <img src="./public/aziza-ral.jpg" class="mx-auto mb-5 lg:hidden" alt="Picture of Aziza Al Mugheiry" />
+      <img src="./public/aziza-ral-portrait.jpg" class="hidden lg:block object-cover max-h-96"
         alt="Picture of Aziza Al Mugheiry" />
-      <div class="md:w-1/2">
+      <div class="lg:w-1/2 text-[1rem] md:text-xl lg:text-2xl md:px-20 lg:px-0">
         <p>
-          <span class="font-semibold md:font-normal">Aziza bint Seif Mohammed Al Mugheiry</span>
+          <span class="font-semibold lg:font-normal">Aziza bint Seif Mohammed Al Mugheiry</span>
           is an Omani scientist currently contributing to research at UK government
           agency known as Science & Technology Facilities Council in Oxfordshire.
         </p>
@@ -139,46 +138,44 @@
         </p>
       </div>
     </article>
+    <section id="press" class="bg-background-darker ">
+      <div class="h-[30rem] w-5/6 text-2xl md:text-5xl content flex flex-col justify-center gap-10 pt-10">
+        <blockquote class="italic">
+          Aziza stands as a beacon of inspiration for aspiring scientists in the Gulf and beyond.
+        </blockquote>
+        <footer class="font-extralight text-sm md:text-2xl mt-2 pr-14 self-end text-neutral-300 hover:text-white">
+          —
+          <a target="_blank" rel="noopener noreferrer"
+            href="https://www.muscatdaily.com/2023/10/16/breaking-barriers-omani-teen-first-from-gcc-to-join-ukri/"
+            class="underline"> Muscat Daily
+          </a>
+        </footer>
+      </div>
+    </section>
     <section id="bos-event"
-      class="h-3/4 md:h-max scroll-mt-28 md:scroll-mt-0 bg-gradient-to-b from-zinc-800 to-foreground w-full">
-      <div id="bos-event-container" class=" w-full md:bg-ruins bg-cover bg-fixed bg-center">
-        <div class="flex flex-col gap-10 md:gap-10 items-center content px-10 pt-10 md:py-10">
-          <div class="self-start md:h-screen flex flex-col justify-end md:pb-48 pt-8">
-            <h3 class="font-semibold md:text-9xl">UPCOMING EVENT</h3>
+      class="h-max scroll-mt-28 md:scroll-mt-0 bg-gradient-to-b from-zinc-800 to-foreground w-full">
+      <div id="bos-event-container" class=" w-full bg-ruins bg-cover bg-fixed bg-center">
+        <div class="flex flex-col gap-10 items-center content px-10 pt-10 py-10">
+          <div class="self-start h-[70vh] md:h-screen flex flex-col justify-end pb-48 pt-8">
+            <h3 class="font-semibold text-6xl md:text-9xl">UPCOMING EVENT</h3>
           </div>
           <br>
-          <div class="mx-auto md:hidden">
-            <blockquote class="text-xl italic">
-              How Modern Science Unravels the Secrets of the Ancient Worlds
-            </blockquote>
-            <footer class="md:hidden font-extralight text-sm mt-2 pl-5">
-              <span>21 Febuary 2024, 17:30-19:00</span>
-              <br>
-              34 Sackville Street, London/Online
-            </footer>
-          </div>
-          <h2 class="content text-xl md:hidden">
-            Join Aziza Al Mugheiry in being the <span class="font-semibold md:text-8xl">youngest
-              speaker in
-              history</span>
-            <br>at the British Omani Society.
-          </h2>
-          <div id="event-title" class="hidden md:block py-[35vh]">
-            <h2 class="content text-8xl font-serif italic md:h-80"> How Modern
+          <div id="event-title" class="py-[35vh]">
+            <h2 class="content text-4xl md:text-7xl lg:text-8xl font-serif italic pb-10 lg:h-80"> How Modern
               Science
               Unravels the
               Secrets
               of the
               Ancient
               Worlds</h2>
-            <footer class="hidden content md:block font-extralight text-5xl pt-2 pl-0">
-              <span class="md:uppercase md:text-red-500 md:font-semibold">21 Febuary 2024, 17:30-19:00</span>
+            <footer class=" content font-extralight text-xl mdtext-3xl lg:text-5xl pt-2 pl-0">
+              <span class="md:uppercase text-red-500 md:font-semibold">21 Febuary 2024, 17:30-19:00</span>
               <br>
               34 Sackville Street, London/Online
             </footer>
           </div>
-          <div class="md:pb-52">
-            <a class="p-2 px-4 border md:border-2 text-sm md:text-3xl rounded-md hover:bg-zinc-800 w-fit text-center whitespace-nowrap"
+          <div class="pb-52">
+            <a class="p-2 px-4 border md:border-2 text-lg md:text-3xl rounded-md hover:bg-zinc-800 w-fit text-center whitespace-nowrap"
               target="_blank" rel="noopener noreferrer"
               href="https://www.britishomani.org/events/bos/how-modern-science-unravels-the-secrets-of-the-ancient-worlds">
               More Info
@@ -189,22 +186,22 @@
     </section>
     <section id="seif-flight">
       <div
-        class="scroll-mt-28 md:scroll-mt-0 content h-[70vh] md:h-[125vh] bg-seif-flight md:bg-seif-flight-desktop bg-cover bg-center flex flex-col justify-end">
-        <div class="mt-10 p-10 text-sm/5 font-light w-full md:pr-32">
+        class="scroll-mt-28 md:scroll-mt-0 content h-[70vh] md:h-[125vh] bg-seif-flight bg-cover bg-center flex flex-col justify-end">
+        <div class="mt-10 p-10 text-sm/5 font-light w-full lg:pr-32">
           <h2 class="text-4xl md:hidden"><span class="font-semibold">Seif Flight:</span> The Story of My
             Father,
             Seif
             Al Mugheiry
           </h2>
           <div class="hidden md:flex flex-col items-end">
-            <h2 class="text-10xl font-serif tracking-wide h-24">Seif Flight</h2>
-            <h3 class="text-6xl font-extralight text-right">
+            <h2 class="text-8xl lg:text-10xl font-serif tracking-wide h-24">Seif Flight</h2>
+            <h3 class="md:text-4xl lg:text-6xl font-extralight text-right">
               The Story of My Father,
               <br>Seif Al Mugheiry
             </h3>
           </div>
           <br>
-          <p class="font-extralight md:text-4xl self-end md:pt-[10vh] pb-[10vh]">
+          <p class="font-extralight text-xl md:text-3xl lg:text-4xl self-end lg:pt-[10vh] py-10 lg:pb-[10vh]">
             Aziza Al Mugheiry is undertaking a journey to discover and explore the life of her father,
             through a biography titled 'Seif Flight'.
           </p>

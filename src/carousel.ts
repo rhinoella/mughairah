@@ -38,21 +38,20 @@ const showCarouselItem = (element: HTMLElement) => {
   else
   {
     element.classList.add("fade");
-  }
-}
+  }}
 
 const hideCarouselItem = (element: HTMLElement) => {
   if(element.classList.contains("fade")) {
     element.classList.remove("flex");
     element.classList.add("hidden");
-    if (carouselIndex == carouselItems.length - 1) carouselIndex = 0; 
     carouselIndex++;
+    if (carouselIndex == carouselItems.length) carouselIndex = 0; 
     showCarouselItem(carouselItems[carouselIndex]);
   }
   else {
     setTimeout(() => {
       showCarouselItem(carouselItems[carouselIndex]);
-    }, 4000);
+    }, 3000);
   }
 }
 
